@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>YegozaWire.Client</AssemblyName>
+    <RootNamespace>YegozaWire</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>embedded</DebugType>
+
+    <!-- ЕДИНСТВЕННОЕ, ЧТО НУЖНО ПОМЕНЯТЬ: путь к твоему SPT -->
+    <SptPath>D:\spt-4.1.6</SptPath>
+    <Managed>$(SptPath)\EscapeFromTarkov_Data\Managed</Managed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(Managed)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Comfort"><HintPath>$(Managed)\Comfort.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(Managed)\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(Managed)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(Managed)\UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(Managed)\UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(Managed)\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AudioModule"><HintPath>$(Managed)\UnityEngine.AudioModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(SptPath)\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepInEx"><HintPath>$(SptPath)\BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Fika.Core"><HintPath>$(SptPath)\BepInEx\plugins\Fika\Fika.Core.dll</HintPath><Private>false</Private></Reference>
+    <!-- Если у Fika отдельный LiteNetLib.dll — раскомментируй: -->
+    <!-- <Reference Include="LiteNetLib"><HintPath>$(SptPath)\BepInEx\plugins\Fika\LiteNetLib.dll</HintPath><Private>false</Private></Reference> -->
+  </ItemGroup>
+
+  <!-- После сборки автоматически копируем DLL в BepInEx\plugins\YegozaWire -->
+  <Target Name="CopyToSpt" AfterTargets="Build" Condition="Exists('$(SptPath)')">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SptPath)\BepInEx\plugins\YegozaWire" />
+  </Target>
+
+</Project>

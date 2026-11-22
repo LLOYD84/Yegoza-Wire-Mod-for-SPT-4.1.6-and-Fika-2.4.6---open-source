@@ -1,0 +1,6 @@
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Client\bin\Release\netstandard2.1\YegozaWire.Client.deps.json
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Client\bin\Release\netstandard2.1\YegozaWire.Client.dll
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Client\obj\Release\netstandard2.1\YegozaWire.Client.csproj.AssemblyReference.cache
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Client\obj\Release\netstandard2.1\YegozaWire.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Client\obj\Release\netstandard2.1\YegozaWire.Client.csproj.CoreCompileInputs.cache
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Client\obj\Release\netstandard2.1\YegozaWire.Client.dll

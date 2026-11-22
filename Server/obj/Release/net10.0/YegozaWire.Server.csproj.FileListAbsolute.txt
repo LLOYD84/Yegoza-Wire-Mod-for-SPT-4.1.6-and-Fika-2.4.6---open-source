@@ -1,0 +1,13 @@
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\bin\Release\net10.0\YegozaWire.Server.deps.json
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\bin\Release\net10.0\YegozaWire.Server.dll
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\bin\Release\net10.0\YegozaWire.Server.pdb
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWire.Server.csproj.AssemblyReference.cache
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWire.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWire.Server.AssemblyInfoInputs.cache
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWire.Server.AssemblyInfo.cs
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWire.Server.csproj.CoreCompileInputs.cache
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWire.Server.dll
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\refint\YegozaWire.Server.dll
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWire.Server.pdb
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\ref\YegozaWire.Server.dll
+C:\Users\yuram\Desktop\YegozaWire_v3.0-release\Server\obj\Release\net10.0\YegozaWi.8B4BDF89.Up2Date

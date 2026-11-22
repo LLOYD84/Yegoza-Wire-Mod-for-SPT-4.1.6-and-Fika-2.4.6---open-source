@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>YegozaWire.Server</AssemblyName>
+    <RootNamespace>YegozaWire.Server</RootNamespace>
+
+    <!-- ЕДИНСТВЕННОЕ, ЧТО НУЖНО ПОМЕНЯТЬ: путь к твоему SPT -->
+    <SptPath>D:\spt-4.1.6</SptPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Если NuGet не найдёт версию 4.1.*, поставь ту, что предложит VS (Управление пакетами NuGet) -->
+    <PackageReference Include="SPTarkov.Common" Version="4.1.*" />
+    <PackageReference Include="SPTarkov.DI" Version="4.1.*" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.1.*" />
+  </ItemGroup>
+
+  <!-- После сборки автоматически копируем DLL в SPT\user\mods\YegozaWire -->
+  <Target Name="CopyToSpt" AfterTargets="Build" Condition="Exists('$(SptPath)')">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SptPath)\SPT_Runtime\user\mods\YegozaWire" />
+  </Target>
+
+</Project>
